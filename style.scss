@@ -1,21 +1,40 @@
 // Roboto Font Link Import
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+$activeBorder: 1px solid gray;
+$titleFont: 64px;
+$titleColor: #BDBDBD;
+
 @mixin nav-bar {
     font-size: 12px;
     padding: 0;
+    letter-spacing: 4px;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-    
+
     .navbar-nav {
         a {
             @include nav-bar;
         }
+
         .active {
-            border-top: 1px solid gray;
-            border-bottom: 1px solid gray;
+            border-top: $activeBorder;
+            border-bottom: $activeBorder;
+        }
+    }
+
+    .row-1 {
+
+        .col-4 {
+            font-size: $titleFont;
+            color: $titleColor;
+        }
+
+        .col-8 {
+            width: 770px;
+            height: 829px;
         }
     }
 }

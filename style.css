@@ -5,8 +5,17 @@ body {
 body .navbar-nav a {
   font-size: 12px;
   padding: 0;
+  letter-spacing: 4px;
 }
 body .navbar-nav .active {
   border-top: 1px solid gray;
   border-bottom: 1px solid gray;
+}
+body .row-1 .col-4 {
+  font-size: 64px;
+  color: #BDBDBD;
+}
+body .row-1 .col-8 {
+  width: 770px;
+  height: 829px;
 }/*# sourceMappingURL=style.css.map */
