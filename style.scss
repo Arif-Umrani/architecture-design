@@ -1,20 +1,29 @@
 // Roboto Font Link Import
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+@font-face {
+    font-family: "Roboto";
+    src: url('assets/fonts/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkCnkaWzU.woff2') format('truetype');
+}
+
 $activeBorder: 1px solid gray;
 $titleFont: 64px;
+$smallFont: 12px;
 $titleColor: #BDBDBD;
+$textColor: #333333;
 
 @mixin nav-bar {
-    font-size: 12px;
+    font-size: $smallFont;
     padding: 0;
     letter-spacing: 4px;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto';
 
     .navbar-nav {
+        margin-bottom: 0;
+
         a {
             @include nav-bar;
         }
@@ -29,12 +38,85 @@ body {
 
         .col-4 {
             font-size: $titleFont;
-            color: $titleColor;
+            line-height: 40px;
+
+            .gray-title {
+                color: $titleColor;
+                font-weight: 300;
+            }
+
+            .black-title {
+                font-weight: 700;
+                color: $textColor;
+                margin-bottom: 100px;
+            }
+
+            .next-pre-icon {
+                width: 53px;
+                height: 53px;
+                gap: 30px;
+
+                .next {
+                    padding: 10px;
+                    box-shadow: 0px 0px 3px 1px #d1cece;
+                }
+
+                .pre {
+                    padding: 10px;
+                    box-shadow: 0px 0px 3px 1px #d1cece;
+                    background-color: #F9F9F9;
+                }
+            }
         }
 
         .col-8 {
-            width: 770px;
-            height: 829px;
+            position: relative;
+
+            .landing-img {
+                width: 770px;
+                height: 829px;
+            }
+
+            .img-text {
+                background-color: #fff;
+                color: $textColor;
+                font-size: $smallFont;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 221px;
+                height: 71px;
+                letter-spacing: 4px;
+
+                p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .about-container {
+        background-color: #FAFAFA;
+        height: 435px;
+
+
+        .about-img {
+
+            .about-img3 {
+                margin-top: 100px;
+            }
+        }
+
+        .about-text {
+            width: 500px;
+
+            .gray-title {
+                color: $titleColor;
+                font-weight: 300;
+                font-size: $titleFont;
+                margin-top: 100px;
+            }
+
         }
     }
 }
