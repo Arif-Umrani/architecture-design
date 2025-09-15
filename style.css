@@ -48,10 +48,6 @@ body .row-1 .col-4 .next-pre-icon .pre {
 body .row-1 .col-8 {
   position: relative;
 }
-body .row-1 .col-8 .landing-img {
-  width: 770px;
-  height: 829px;
-}
 body .row-1 .col-8 .img-text {
   background-color: #fff;
   color: #333333;
@@ -81,4 +77,70 @@ body .about-container .about-text .gray-title {
   font-weight: 300;
   font-size: 64px;
   margin-top: 100px;
+}
+body .about-container .about-text .img-text {
+  background-color: #fff;
+  color: #333333;
+  font-size: 12px;
+  width: 150px;
+  height: 71px;
+  letter-spacing: 4px;
+}
+body .mission-container .gray-title {
+  color: #BDBDBD;
+  font-weight: 300;
+  font-size: 64px;
+  margin-top: 200px;
+  margin-bottom: 0;
+}
+body .mission-container .points {
+  color: #F2F2F2;
+  font-size: 200px;
+  font-weight: 900;
+}
+body .mission-container .point-text {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 36px;
+}
+body .mission-container .p1-width {
+  width: 280px;
+}
+body .mission-container .p2-width {
+  width: 420px;
+}
+body .sample-project .gray-title {
+  color: #BDBDBD;
+  font-weight: 300;
+  font-size: 64px;
+}
+body .sample-project .sample-title {
+  width: 550px;
+  height: 244px;
+  background-image: url(assets/images/bg_sample_project.png);
+  background-size: cover;
+  font-size: 64px;
+  font-weight: 700px;
+  line-height: 64px;
+  color: #F2F2F2;
+}
+body .sample-project .sample-title p {
+  margin-left: 30px;
+}
+body .contact-form .gray-title {
+  color: #BDBDBD;
+  font-weight: 300;
+  font-size: 64px;
+}
+body footer {
+  height: 420px;
+}
+body footer .mt-50 {
+  margin-top: 50px;
+  line-height: 40px;
+}
+body footer .logo {
+  margin-left: 50px;
+  width: 145px;
+  height: 94px;
 }/*# sourceMappingURL=style.css.map */
