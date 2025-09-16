@@ -18,6 +18,17 @@ $textColor: #333333;
     letter-spacing: 4px;
 }
 
+@mixin gray-title {
+    color: $titleColor;
+    font-weight: 300;
+}
+
+@mixin black-title {
+    font-weight: 700;
+    color: $textColor;
+    margin-bottom: 100px;
+}
+
 body {
     font-family: 'Roboto';
 
@@ -41,14 +52,11 @@ body {
             line-height: 40px;
 
             .gray-title {
-                color: $titleColor;
-                font-weight: 300;
+                @include gray-title;
             }
 
             .black-title {
-                font-weight: 700;
-                color: $textColor;
-                margin-bottom: 100px;
+                @include black-title;
             }
 
             .next-pre-icon {
@@ -178,7 +186,7 @@ body {
     }
 
     .contact-form {
-           .gray-title {
+        .gray-title {
             color: $titleColor;
             font-weight: 300;
             font-size: $titleFont;
