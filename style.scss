@@ -29,205 +29,237 @@ $textColor: #333333;
     margin-bottom: 100px;
 }
 
-body {
-    font-family: 'Roboto';
+.banner-section {
 
-    .navbar-nav {
-        margin-bottom: 0;
-
-        a {
-            @include nav-bar;
+    .image-container {
+        position: relative;
+        .banner-image {
+            width: 100%;
+            height: 829px;
         }
-
-        .active {
-            border-top: $activeBorder;
-            border-bottom: $activeBorder;
-        }
-    }
-
-    .row-1 {
-
-        .col-4 {
-            font-size: $titleFont;
-            line-height: 40px;
-
-            .gray-title {
-                @include gray-title;
-            }
-
-            .black-title {
-                @include black-title;
-            }
-        }
-
-        .col-8 {
-            position: relative;
-
-            .img-text {
-                background-color: #fff;
-                color: $textColor;
-                font-size: $smallFont;
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                width: 221px;
-                height: 71px;
-                letter-spacing: 4px;
-                cursor: pointer;
-                p {
-                    margin-bottom: 0;
-                }
-            }
-        }
-    }
-
-    .about-container {
-        background-color: #FAFAFA;
-        height: 435px;
-
-        .about-img {
-
-            .about-img3 {
-                margin-top: 100px;
-            }
-        }
-
-        .about-text {
-            width: 500px;
-
-            .gray-title {
-                color: $titleColor;
-                font-weight: 300;
-                font-size: $titleFont;
-                margin-top: 100px;
-            }
-
-            .img-text {
-                background-color: #fff;
-                color: $textColor;
-                font-size: $smallFont;
-                width: 150px;
-                height: 71px;
-                letter-spacing: 4px;
-                cursor: pointer;
-            }
-        }
-    }
-
-    .mission-container {
-        .gray-title {
-            color: $titleColor;
-            font-weight: 300;
-            font-size: $titleFont;
-            margin-top: 200px;
-            margin-bottom: 0;
-        }
-
-        .points {
-            color: #F2F2F2;
-            font-size: 200px;
-            font-weight: 900;
-        }
-
-        .point-text {
-            font-size: 22px;
-            font-weight: 400;
-            line-height: 36px;
-        }
-
-        .p1-width {
-            width: 280px;
-        }
-
-        .p2-width {
-            width: 420px;
-        }
-    }
-
-    .sample-project {
-
-        .gray-title {
-            color: $titleColor;
-            font-weight: 300;
-            font-size: $titleFont;
-        }
-
-        .sample-title {
-            width: 550px;
-            height: 244px;
-            background-image: url(assets/images/bg_sample_project.png);
-            background-size: cover;
-            font-size: $titleFont;
-            font-weight: 700px;
-            line-height: 64px;
-            color: #F2F2F2;
-
-            p {
-                margin-left: 30px;
-            }
-        }
-    }
-
-    .contact-form {
-        .gray-title {
-            color: $titleColor;
-            font-weight: 300;
-            font-size: $titleFont;
-        }
-    }
-
-    footer {
-        height: 420px;
-
-        .mt-50 {
-            margin-top: 50px;
-            line-height: 40px;
-        }
-
-        .logo {
-            margin-left: 50px;
-            width: 145px;
-            height: 94px;
-        }
-
-        .footer-info {
-            text-decoration: none;
-            color: #fff;
-            transition: transform 0.3s ease;
-
+        button {
+            border: none;
+            background: transparent;
             &:hover {
-                color: blue;
-                cursor: pointer;
-                transform: scaleY(-1.5);
+                font-weight: 700;
             }
         }
-    }
 
-    // --- Page-2 Photo Gallery Styling ---
-    .black-title {
-        font-size: $titleFont;
-        border-bottom: 1px solid #f8f6f6;
-    }
-
-    // --- Page-3 Our Project Page Styling ---
-    .project-text {
-        width: 400px;
-    }
-
-    // --- Page-4 Contacts Page Styling ---
-    .contact-info,
-    .company-name {
-        font-size: 18px;
-        font-weight: 700;
+        .img-text {
+            background-color: #fff;
+            color: $textColor;
+            font-size: $smallFont;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 221px;
+            height: 71px;
+            letter-spacing: 4px;
+            cursor: pointer;
+            p {
+                margin-bottom: 0;
+            }
+        }
     }
 }
 
 
+// body {
+//     font-family: 'Roboto';
+
+//     .navbar-nav {
+//         margin-bottom: 0;
+
+//         a {
+//             @include nav-bar;
+//         }
+
+//         .active {
+//             border-top: $activeBorder;
+//             border-bottom: $activeBorder;
+//         }
+//     }
+
+//     .row-1 {
+
+//         .col-4 {
+//             font-size: $titleFont;
+//             line-height: 40px;
+
+//             .gray-title {
+//                 @include gray-title;
+//             }
+
+//             .black-title {
+//                 @include black-title;
+//             }
+//         }
+
+        
+//     }
+
+//     .about-container {
+//         background-color: #FAFAFA;
+//         height: 435px;
+
+//         .about-img {
+
+//             .about-img3 {
+//                 margin-top: 100px;
+//             }
+//         }
+
+//         .about-text {
+//             width: 500px;
+
+//             .gray-title {
+//                 color: $titleColor;
+//                 font-weight: 300;
+//                 font-size: $titleFont;
+//                 margin-top: 100px;
+//             }
+
+//             .img-text {
+//                 background-color: #fff;
+//                 color: $textColor;
+//                 font-size: $smallFont;
+//                 width: 150px;
+//                 height: 71px;
+//                 letter-spacing: 4px;
+//                 cursor: pointer;
+//             }
+//         }
+//     }
+
+//     .mission-container {
+//         .gray-title {
+//             color: $titleColor;
+//             font-weight: 300;
+//             font-size: $titleFont;
+//             margin-top: 200px;
+//             margin-bottom: 0;
+//         }
+
+//         .points {
+//             color: #F2F2F2;
+//             font-size: 200px;
+//             font-weight: 900;
+//         }
+
+//         .point-text {
+//             font-size: 22px;
+//             font-weight: 400;
+//             line-height: 36px;
+//         }
+
+//         .p1-width {
+//             width: 280px;
+//         }
+
+//         .p2-width {
+//             width: 420px;
+//         }
+//     }
+
+//     .sample-project {
+
+//         .gray-title {
+//             color: $titleColor;
+//             font-weight: 300;
+//             font-size: $titleFont;
+//         }
+
+//         .sample-title {
+//             width: 550px;
+//             height: 244px;
+//             background-image: url(assets/images/bg_sample_project.png);
+//             background-size: cover;
+//             font-size: $titleFont;
+//             font-weight: 700px;
+//             line-height: 64px;
+//             color: #F2F2F2;
+
+//             p {
+//                 margin-left: 30px;
+//             }
+//         }
+//     }
+
+//     .contact-form {
+//         .gray-title {
+//             color: $titleColor;
+//             font-weight: 300;
+//             font-size: $titleFont;
+//         }
+//     }
+
+//     footer {
+//         height: 420px;
+
+//         .mt-50 {
+//             margin-top: 50px;
+//             line-height: 40px;
+//         }
+
+//         .logo {
+//             margin-left: 50px;
+//             width: 145px;
+//             height: 94px;
+//         }
+
+//         .footer-info {
+//             text-decoration: none;
+//             color: #fff;
+//             transition: transform 0.3s ease;
+
+//             &:hover {
+//                 color: blue;
+//                 cursor: pointer;
+//                 transform: scaleY(-1.5);
+//             }
+//         }
+//     }
+
+//     // --- Page-2 Photo Gallery Styling ---
+//     .black-title {
+//         font-size: $titleFont;
+//         border-bottom: 1px solid #f8f6f6;
+//     }
+
+//     // --- Page-3 Our Project Page Styling ---
+//     .project-text {
+//         width: 400px;
+//     }
+
+//     // --- Page-4 Contacts Page Styling ---
+//     .contact-info,
+//     .company-name {
+//         font-size: 18px;
+//         font-weight: 700;
+//     }
+// }
 
 
 
 
-// shared classes 
+
+
+// // shared classes 
+@mixin main-title($color, $wight) {
+    color: $color;
+    font-weight: $wight;
+    font-size: $titleFont;
+}
+.main-title-gray {
+    @include main-title($titleColor, 300);
+    margin-top: 100px;    
+}
+.main-title-black {
+    @include main-title($textColor, 700)
+}
+
+
+
 .gray-title {
     color: $titleColor;
     font-weight: 300;
@@ -241,30 +273,30 @@ body {
     margin-bottom: 100px;
 }
 
-.next-pre-icon {
-    gap: 30px;
+// .next-pre-icon {
+//     gap: 30px;
 
-    .next {
-        padding: 10px;
-        box-shadow: 0px 0px 3px 1px #d1cece;
-        transition: transform 0.5s ease;
+//     .next {
+//         padding: 10px;
+//         box-shadow: 0px 0px 3px 1px #d1cece;
+//         transition: transform 0.5s ease;
 
-        &:hover {
-            cursor: pointer;
-            background-color: #F9F9F9;
-            transform: scale(1.1);
-        }
-    }
+//         &:hover {
+//             cursor: pointer;
+//             background-color: #F9F9F9;
+//             transform: scale(1.1);
+//         }
+//     }
 
-    .pre {
-        padding: 10px;
-        box-shadow: 0px 0px 3px 1px #d1cece;
-        transition: transform 0.5s ease;
+//     .pre {
+//         padding: 10px;
+//         box-shadow: 0px 0px 3px 1px #d1cece;
+//         transition: transform 0.5s ease;
         
-        &:hover {
-            background-color: #F9F9F9;
-            cursor: pointer;
-            transform: scale(1.1);
-        }
-    }
-}
+//         &:hover {
+//             background-color: #F9F9F9;
+//             cursor: pointer;
+//             transform: scale(1.1);
+//         }
+//     }
+// }

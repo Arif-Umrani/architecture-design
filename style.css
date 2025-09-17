@@ -3,38 +3,21 @@
   font-family: "Roboto";
   src: url("assets/fonts/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkCnkaWzU.woff2") format("truetype");
 }
-body {
-  font-family: "Roboto";
-}
-body .navbar-nav {
-  margin-bottom: 0;
-}
-body .navbar-nav a {
-  font-size: 12px;
-  padding: 0;
-  letter-spacing: 4px;
-}
-body .navbar-nav .active {
-  border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
-}
-body .row-1 .col-4 {
-  font-size: 64px;
-  line-height: 40px;
-}
-body .row-1 .col-4 .gray-title {
-  color: #BDBDBD;
-  font-weight: 300;
-}
-body .row-1 .col-4 .black-title {
-  font-weight: 700;
-  color: #333333;
-  margin-bottom: 100px;
-}
-body .row-1 .col-8 {
+.banner-section .image-container {
   position: relative;
 }
-body .row-1 .col-8 .img-text {
+.banner-section .image-container .banner-image {
+  width: 100%;
+  height: 829px;
+}
+.banner-section .image-container button {
+  border: none;
+  background: transparent;
+}
+.banner-section .image-container button:hover {
+  font-weight: 700;
+}
+.banner-section .image-container .img-text {
   background-color: #fff;
   color: #333333;
   font-size: 12px;
@@ -46,113 +29,21 @@ body .row-1 .col-8 .img-text {
   letter-spacing: 4px;
   cursor: pointer;
 }
-body .row-1 .col-8 .img-text p {
+.banner-section .image-container .img-text p {
   margin-bottom: 0;
 }
-body .about-container {
-  background-color: #FAFAFA;
-  height: 435px;
-}
-body .about-container .about-img .about-img3 {
-  margin-top: 100px;
-}
-body .about-container .about-text {
-  width: 500px;
-}
-body .about-container .about-text .gray-title {
+
+.main-title-gray {
   color: #BDBDBD;
   font-weight: 300;
   font-size: 64px;
   margin-top: 100px;
 }
-body .about-container .about-text .img-text {
-  background-color: #fff;
+
+.main-title-black {
   color: #333333;
-  font-size: 12px;
-  width: 150px;
-  height: 71px;
-  letter-spacing: 4px;
-  cursor: pointer;
-}
-body .mission-container .gray-title {
-  color: #BDBDBD;
-  font-weight: 300;
-  font-size: 64px;
-  margin-top: 200px;
-  margin-bottom: 0;
-}
-body .mission-container .points {
-  color: #F2F2F2;
-  font-size: 200px;
-  font-weight: 900;
-}
-body .mission-container .point-text {
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 36px;
-}
-body .mission-container .p1-width {
-  width: 280px;
-}
-body .mission-container .p2-width {
-  width: 420px;
-}
-body .sample-project .gray-title {
-  color: #BDBDBD;
-  font-weight: 300;
-  font-size: 64px;
-}
-body .sample-project .sample-title {
-  width: 550px;
-  height: 244px;
-  background-image: url(assets/images/bg_sample_project.png);
-  background-size: cover;
-  font-size: 64px;
-  font-weight: 700px;
-  line-height: 64px;
-  color: #F2F2F2;
-}
-body .sample-project .sample-title p {
-  margin-left: 30px;
-}
-body .contact-form .gray-title {
-  color: #BDBDBD;
-  font-weight: 300;
-  font-size: 64px;
-}
-body footer {
-  height: 420px;
-}
-body footer .mt-50 {
-  margin-top: 50px;
-  line-height: 40px;
-}
-body footer .logo {
-  margin-left: 50px;
-  width: 145px;
-  height: 94px;
-}
-body footer .footer-info {
-  text-decoration: none;
-  color: #fff;
-  transition: transform 0.3s ease;
-}
-body footer .footer-info:hover {
-  color: blue;
-  cursor: pointer;
-  transform: scaleY(-1.5);
-}
-body .black-title {
-  font-size: 64px;
-  border-bottom: 1px solid #f8f6f6;
-}
-body .project-text {
-  width: 400px;
-}
-body .contact-info,
-body .company-name {
-  font-size: 18px;
   font-weight: 700;
+  font-size: 64px;
 }
 
 .gray-title {
@@ -166,28 +57,4 @@ body .company-name {
   font-weight: 700;
   color: #333333;
   margin-bottom: 100px;
-}
-
-.next-pre-icon {
-  gap: 30px;
-}
-.next-pre-icon .next {
-  padding: 10px;
-  box-shadow: 0px 0px 3px 1px #d1cece;
-  transition: transform 0.5s ease;
-}
-.next-pre-icon .next:hover {
-  cursor: pointer;
-  background-color: #F9F9F9;
-  transform: scale(1.1);
-}
-.next-pre-icon .pre {
-  padding: 10px;
-  box-shadow: 0px 0px 3px 1px #d1cece;
-  transition: transform 0.5s ease;
-}
-.next-pre-icon .pre:hover {
-  background-color: #F9F9F9;
-  cursor: pointer;
-  transform: scale(1.1);
 }/*# sourceMappingURL=style.css.map */
