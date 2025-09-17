@@ -147,7 +147,8 @@ body .black-title {
 body .project-text {
   width: 400px;
 }
-body .contact-info, body .company-name {
+body .contact-info,
+body .company-name {
   font-size: 18px;
   font-weight: 700;
 }
@@ -167,14 +168,24 @@ body .contact-info, body .company-name {
 
 .next-pre-icon {
   gap: 30px;
-  cursor: pointer;
 }
 .next-pre-icon .next {
   padding: 10px;
   box-shadow: 0px 0px 3px 1px #d1cece;
+  transition: transform 0.5s ease;
+}
+.next-pre-icon .next:hover {
+  cursor: pointer;
+  background-color: #F9F9F9;
+  transform: scale(1.1);
 }
 .next-pre-icon .pre {
   padding: 10px;
   box-shadow: 0px 0px 3px 1px #d1cece;
+  transition: transform 0.5s ease;
+}
+.next-pre-icon .pre:hover {
   background-color: #F9F9F9;
+  cursor: pointer;
+  transform: scale(1.1);
 }/*# sourceMappingURL=style.css.map */
