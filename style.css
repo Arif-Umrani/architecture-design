@@ -31,20 +31,6 @@ body .row-1 .col-4 .black-title {
   color: #333333;
   margin-bottom: 100px;
 }
-body .row-1 .col-4 .next-pre-icon {
-  width: 53px;
-  height: 53px;
-  gap: 30px;
-}
-body .row-1 .col-4 .next-pre-icon .next {
-  padding: 10px;
-  box-shadow: 0px 0px 3px 1px #d1cece;
-}
-body .row-1 .col-4 .next-pre-icon .pre {
-  padding: 10px;
-  box-shadow: 0px 0px 3px 1px #d1cece;
-  background-color: #F9F9F9;
-}
 body .row-1 .col-8 {
   position: relative;
 }
@@ -143,4 +129,52 @@ body footer .logo {
   margin-left: 50px;
   width: 145px;
   height: 94px;
+}
+body footer .footer-info {
+  text-decoration: none;
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+body footer .footer-info:hover {
+  color: blue;
+  cursor: pointer;
+  transform: scaleY(-1.5);
+}
+body .black-title {
+  font-size: 64px;
+  border-bottom: 1px solid #f8f6f6;
+}
+body .project-text {
+  width: 400px;
+}
+body .contact-info, body .company-name {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.gray-title {
+  color: #BDBDBD;
+  font-weight: 300;
+  font-size: 64px;
+  margin-top: 100px;
+}
+
+.black-title {
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 100px;
+}
+
+.next-pre-icon {
+  gap: 30px;
+  cursor: pointer;
+}
+.next-pre-icon .next {
+  padding: 10px;
+  box-shadow: 0px 0px 3px 1px #d1cece;
+}
+.next-pre-icon .pre {
+  padding: 10px;
+  box-shadow: 0px 0px 3px 1px #d1cece;
+  background-color: #F9F9F9;
 }/*# sourceMappingURL=style.css.map */

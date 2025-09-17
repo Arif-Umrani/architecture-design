@@ -58,23 +58,6 @@ body {
             .black-title {
                 @include black-title;
             }
-
-            .next-pre-icon {
-                width: 53px;
-                height: 53px;
-                gap: 30px;
-
-                .next {
-                    padding: 10px;
-                    box-shadow: 0px 0px 3px 1px #d1cece;
-                }
-
-                .pre {
-                    padding: 10px;
-                    box-shadow: 0px 0px 3px 1px #d1cece;
-                    background-color: #F9F9F9;
-                }
-            }
         }
 
         .col-8 {
@@ -206,6 +189,74 @@ body {
             width: 145px;
             height: 94px;
         }
+        
+        .footer-info {
+            text-decoration: none;
+            color: #fff;
 
+            transition: transform 0.3s ease;
+            &:hover {
+                color: blue;
+                cursor: pointer;
+                transform: scaleY(-1.5);
+            }
+        }
+
+    }
+
+    // --- Page-2 Photo Gallery Styling ---
+    .black-title {
+        font-size: $titleFont;
+        border-bottom: 1px solid #f8f6f6;
+    }
+
+    // --- Page-3 Our Project Page Styling ---
+    .project-text {
+        width: 400px;
+
+
+    }
+
+    // --- Page-4 Contacts Page Styling ---
+    .contact-info, .company-name {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+  
+}
+
+
+
+
+
+
+// shared classes 
+.gray-title {
+    color: $titleColor;
+    font-weight: 300;
+    font-size: $titleFont;
+    margin-top: 100px;
+}
+
+.black-title {
+    font-weight: 700;
+    color: $textColor;
+    margin-bottom: 100px;
+}
+
+.next-pre-icon {
+    gap: 30px;
+    cursor: pointer;
+
+    .next {
+        padding: 10px;
+        box-shadow: 0px 0px 3px 1px #d1cece;
+    }
+
+    .pre {
+        padding: 10px;
+        box-shadow: 0px 0px 3px 1px #d1cece;
+        background-color: #F9F9F9;
     }
 }
