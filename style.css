@@ -44,6 +44,7 @@ body .row-1 .col-8 .img-text {
   width: 221px;
   height: 71px;
   letter-spacing: 4px;
+  cursor: pointer;
 }
 body .row-1 .col-8 .img-text p {
   margin-bottom: 0;
@@ -71,6 +72,7 @@ body .about-container .about-text .img-text {
   width: 150px;
   height: 71px;
   letter-spacing: 4px;
+  cursor: pointer;
 }
 body .mission-container .gray-title {
   color: #BDBDBD;
