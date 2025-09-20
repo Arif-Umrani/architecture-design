@@ -168,16 +168,21 @@ body .company-name {
   margin-bottom: 100px;
 }
 
-.next, .pre, .img-style {
+.next,
+.pre,
+.img-style {
   transition: transform 0.5s ease;
 }
-.next:hover, .pre:hover, .img-style:hover {
+.next:hover,
+.pre:hover,
+.img-style:hover {
   background-color: #F9F9F9;
   transform: scale(1.1);
   box-shadow: 0px 0px 3px 1px #d1cece;
 }
 
-.next, .pre {
+.next,
+.pre {
   padding: 10px;
   cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
