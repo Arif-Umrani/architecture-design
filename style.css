@@ -168,26 +168,16 @@ body .company-name {
   margin-bottom: 100px;
 }
 
-.next-pre-icon {
-  gap: 30px;
-}
-.next-pre-icon .next {
-  padding: 10px;
-  box-shadow: 0px 0px 3px 1px #d1cece;
+.next, .pre, .img-style {
   transition: transform 0.5s ease;
 }
-.next-pre-icon .next:hover {
-  cursor: pointer;
+.next:hover, .pre:hover, .img-style:hover {
   background-color: #F9F9F9;
   transform: scale(1.1);
-}
-.next-pre-icon .pre {
-  padding: 10px;
   box-shadow: 0px 0px 3px 1px #d1cece;
-  transition: transform 0.5s ease;
 }
-.next-pre-icon .pre:hover {
-  background-color: #F9F9F9;
+
+.next, .pre {
+  padding: 10px;
   cursor: pointer;
-  transform: scale(1.1);
 }/*# sourceMappingURL=style.css.map */
