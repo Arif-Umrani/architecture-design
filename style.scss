@@ -45,9 +45,9 @@ body {
     }
   }
 
-  .row-1 {
+  .landing-page {
 
-    .col-4 {
+    .main-title {
       font-size: $titleFont;
       line-height: 40px;
 
@@ -60,7 +60,7 @@ body {
       }
     }
 
-    .col-8 {
+    .title-img {
       position: relative;
 
       .img-text {
@@ -263,3 +263,49 @@ body {
   padding: 10px;
   cursor: pointer;
 }
+
+  /* thumbnail */
+  .thumb { width:200px; cursor: pointer; display:inline-block; }
+
+  /* overlay hidden by default */
+  .overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    z-index: 99;
+  }
+
+  /* when target is active, show overlay */
+  .overlay:target { display: flex; }
+
+  /* image inside overlay: scale to fit */
+  .overlay img {
+    max-width: 100%;
+    max-height: 100%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    border-radius: 6px;
+  }
+
+  /* close button */
+  .close {
+    position: fixed;
+    top: 18px;
+    right: 18px;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    background: rgba(0,0,0,0.4);
+    padding: 6px 10px;
+    border-radius: 4px;
+  }
+
+  .photo-item {
+    width: 210px;
+    height: 260px;
+    background-image: url(assets/images/building1_fullscreen.jpg);
+    background-size: cover;
+  }
