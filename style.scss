@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 @font-face {
-    font-family: "Roboto";
-    src: url('assets/fonts/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkCnkaWzU.woff2') format('truetype');
+  font-family: "Roboto";
+  src: url('assets/fonts/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkCnkaWzU.woff2') format('truetype');
 }
 
 $activeBorder: 1px solid gray;
@@ -13,213 +13,215 @@ $titleColor: #BDBDBD;
 $textColor: #333333;
 
 @mixin nav-bar {
-    font-size: $smallFont;
-    padding: 0;
-    letter-spacing: 4px;
+  font-size: $smallFont;
+  padding: 0;
+  letter-spacing: 4px;
 }
 
 @mixin gray-title {
-    color: $titleColor;
-    font-weight: 300;
+  color: $titleColor;
+  font-weight: 300;
 }
 
 @mixin black-title {
-    font-weight: 700;
-    color: $textColor;
-    margin-bottom: 100px;
+  font-weight: 700;
+  color: $textColor;
+  margin-bottom: 100px;
 }
 
 body {
-    font-family: 'Roboto';
+  font-family: 'Roboto';
 
-    .navbar-nav {
-        margin-bottom: 0;
+  .navbar-nav {
+    margin-bottom: 0;
 
-        a {
-            @include nav-bar;
-        }
-
-        .active {
-            border-top: $activeBorder;
-            border-bottom: $activeBorder;
-        }
+    a {
+      @include nav-bar;
     }
 
-    .row-1 {
+    .active {
+      border-top: $activeBorder;
+      border-bottom: $activeBorder;
+    }
+  }
 
-        .col-4 {
-            font-size: $titleFont;
-            line-height: 40px;
+  .landing-page {
 
-            .gray-title {
-                @include gray-title;
-            }
+    .main-title {
+      font-size: $titleFont;
+      line-height: 40px;
 
-            .black-title {
-                @include black-title;
-            }
-        }
+      .gray-title {
+        @include gray-title;
+      }
 
-        .col-8 {
-            position: relative;
-
-            .img-text {
-                background-color: #fff;
-                color: $textColor;
-                font-size: $smallFont;
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                width: 221px;
-                height: 71px;
-                letter-spacing: 4px;
-                cursor: pointer;
-                p {
-                    margin-bottom: 0;
-                }
-            }
-        }
+      .black-title {
+        @include black-title;
+      }
     }
 
-    .about-container {
-        background-color: #FAFAFA;
-        height: 435px;
+    .title-img {
+      position: relative;
 
-        .about-img {
+      .img-text {
+        background-color: #fff;
+        color: $textColor;
+        font-size: $smallFont;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 221px;
+        height: 71px;
+        letter-spacing: 4px;
+        cursor: pointer;
 
-            .about-img3 {
-                margin-top: 100px;
-            }
+        p {
+          margin-bottom: 0;
         }
+      }
+    }
+  }
 
-        .about-text {
-            width: 500px;
+  .about-container {
+    background-color: #FAFAFA;
+    height: 435px;
 
-            .gray-title {
-                color: $titleColor;
-                font-weight: 300;
-                font-size: $titleFont;
-                margin-top: 100px;
-            }
+    .about-img {
 
-            .img-text {
-                background-color: #fff;
-                color: $textColor;
-                font-size: $smallFont;
-                width: 150px;
-                height: 71px;
-                letter-spacing: 4px;
-                cursor: pointer;
-            }
-        }
+      .about-img3 {
+        margin-top: 100px;
+      }
     }
 
-    .mission-container {
-        .gray-title {
-            color: $titleColor;
-            font-weight: 300;
-            font-size: $titleFont;
-            margin-top: 200px;
-            margin-bottom: 0;
-        }
+    .about-text {
+      width: 500px;
 
-        .points {
-            color: #F2F2F2;
-            font-size: 200px;
-            font-weight: 900;
-        }
-
-        .point-text {
-            font-size: 22px;
-            font-weight: 400;
-            line-height: 36px;
-        }
-
-        .p1-width {
-            width: 280px;
-        }
-
-        .p2-width {
-            width: 420px;
-        }
-    }
-
-    .sample-project {
-
-        .gray-title {
-            color: $titleColor;
-            font-weight: 300;
-            font-size: $titleFont;
-        }
-
-        .sample-title {
-            width: 550px;
-            height: 244px;
-            background-image: url(assets/images/bg_sample_project.png);
-            background-size: cover;
-            font-size: $titleFont;
-            font-weight: 700px;
-            line-height: 64px;
-            color: #F2F2F2;
-
-            p {
-                margin-left: 30px;
-            }
-        }
-    }
-
-    .contact-form {
-        .gray-title {
-            color: $titleColor;
-            font-weight: 300;
-            font-size: $titleFont;
-        }
-    }
-
-    footer {
-        height: 420px;
-
-        .mt-50 {
-            margin-top: 50px;
-            line-height: 40px;
-        }
-
-        .logo {
-            margin-left: 50px;
-            width: 145px;
-            height: 94px;
-        }
-
-        .footer-info {
-            text-decoration: none;
-            color: #fff;
-            transition: transform 0.3s ease;
-
-            &:hover {
-                color: blue;
-                cursor: pointer;
-                transform: scaleY(-1.5);
-            }
-        }
-    }
-
-    // --- Page-2 Photo Gallery Styling ---
-    .black-title {
+      .gray-title {
+        color: $titleColor;
+        font-weight: 300;
         font-size: $titleFont;
-        border-bottom: 1px solid #f8f6f6;
+        margin-top: 100px;
+      }
+
+      .img-text {
+        background-color: #fff;
+        color: $textColor;
+        font-size: $smallFont;
+        width: 150px;
+        height: 71px;
+        letter-spacing: 4px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .mission-container {
+    .gray-title {
+      color: $titleColor;
+      font-weight: 300;
+      font-size: $titleFont;
+      margin-top: 200px;
+      margin-bottom: 0;
     }
 
-    // --- Page-3 Our Project Page Styling ---
-    .project-text {
-        width: 400px;
+    .points {
+      color: #F2F2F2;
+      font-size: 200px;
+      font-weight: 900;
     }
 
-    // --- Page-4 Contacts Page Styling ---
-    .contact-info,
-    .company-name {
-        font-size: 18px;
-        font-weight: 700;
+    .point-text {
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 36px;
     }
+
+    .p1-width {
+      width: 280px;
+    }
+
+    .p2-width {
+      width: 420px;
+    }
+  }
+
+  .sample-project {
+
+    .gray-title {
+      color: $titleColor;
+      font-weight: 300;
+      font-size: $titleFont;
+    }
+
+    .sample-title {
+      width: 550px;
+      height: 244px;
+      background-image: url(assets/images/bg_sample_project.png);
+      background-size: cover;
+      font-size: $titleFont;
+      font-weight: 700px;
+      line-height: 64px;
+      color: #F2F2F2;
+
+      p {
+        margin-left: 30px;
+      }
+    }
+  }
+
+  .contact-form {
+    .gray-title {
+      color: $titleColor;
+      font-weight: 300;
+      font-size: $titleFont;
+    }
+  }
+
+  footer {
+    height: 420px;
+
+    .mt-50 {
+      margin-top: 50px;
+      line-height: 40px;
+    }
+
+    .logo {
+      margin-left: 50px;
+      width: 145px;
+      height: 94px;
+    }
+
+    .footer-info {
+      text-decoration: none;
+      color: #fff;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        color: blue;
+        cursor: pointer;
+        transform: scaleY(-1.5);
+
+      }
+    }
+  }
+
+  // --- Page-2 Photo Gallery Styling ---
+  .black-title {
+    font-size: $titleFont;
+    border-bottom: 1px solid #f8f6f6;
+  }
+
+  // --- Page-3 Our Project Page Styling ---
+  .project-text {
+    width: 400px;
+  }
+
+  // --- Page-4 Contacts Page Styling ---
+  .contact-info,
+  .company-name {
+    font-size: 18px;
+    font-weight: 700;
+  }
 }
 
 
@@ -229,42 +231,81 @@ body {
 
 // shared classes 
 .gray-title {
-    color: $titleColor;
-    font-weight: 300;
-    font-size: $titleFont;
-    margin-top: 100px;
+  color: $titleColor;
+  font-weight: 300;
+  font-size: $titleFont;
+  margin-top: 100px;
 }
 
 .black-title {
-    font-weight: 700;
-    color: $textColor;
-    margin-bottom: 100px;
+  font-weight: 700;
+  color: $textColor;
+  margin-bottom: 100px;
 }
 
-.next-pre-icon {
-    gap: 30px;
 
-    .next {
-        padding: 10px;
-        box-shadow: 0px 0px 3px 1px #d1cece;
-        transition: transform 0.5s ease;
 
-        &:hover {
-            cursor: pointer;
-            background-color: #F9F9F9;
-            transform: scale(1.1);
-        }
-    }
 
-    .pre {
-        padding: 10px;
-        box-shadow: 0px 0px 3px 1px #d1cece;
-        transition: transform 0.5s ease;
-        
-        &:hover {
-            background-color: #F9F9F9;
-            cursor: pointer;
-            transform: scale(1.1);
-        }
-    }
+.next,
+.pre,
+.img-style {
+  transition: transform 0.5s ease;
+
+  &:hover {
+    background-color: #F9F9F9;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 3px 1px #d1cece;
+  }
 }
+
+.next,
+.pre {
+  padding: 10px;
+  cursor: pointer;
+}
+
+  /* thumbnail */
+  .thumb { width:200px; cursor: pointer; display:inline-block; }
+
+  /* overlay hidden by default */
+  .overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    z-index: 99;
+  }
+
+  /* when target is active, show overlay */
+  .overlay:target { display: flex; }
+
+  /* image inside overlay: scale to fit */
+  .overlay img {
+    max-width: 100%;
+    max-height: 100%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    border-radius: 6px;
+  }
+
+  /* close button */
+  .close {
+    position: fixed;
+    top: 18px;
+    right: 18px;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    background: rgba(0,0,0,0.4);
+    padding: 6px 10px;
+    border-radius: 4px;
+  }
+
+  .photo-item {
+    width: 210px;
+    height: 260px;
+    background-image: url(assets/images/building1_fullscreen.jpg);
+    background-size: cover;
+  }
