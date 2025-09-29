@@ -160,8 +160,7 @@ footer {
   width: 400px;
 }
 
-.contact-info,
-.company-name {
+.contact-info .info-text {
   font-size: 18px;
   font-weight: 700;
 }
@@ -274,10 +273,62 @@ footer {
     width: 300px;
     margin-bottom: 50px;
   }
+  .photo-item {
+    width: 500px;
+  }
+  .contact-text {
+    margin-left: 70px;
+  }
+  .contact-info {
+    flex-direction: column;
+  }
   footer {
     width: 650px;
   }
   .footer-margin {
     margin-left: 200px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sample-project .sample-title {
+    width: 560px;
+    margin-bottom: 20px;
+  }
+  .sample-img {
+    width: 700px;
+    margin-left: 0px;
+    margin-top: 40px;
+  }
+  .img-5 {
+    margin-bottom: 40px;
+  }
+  .sample-btn {
+    margin-left: 50px;
+  }
+  .sample-project .btn,
+  .contact-form .btn {
+    width: 300px;
+    margin-bottom: 50px;
+  }
+  .input-width {
+    width: 700px;
+  }
+  .photo-item {
+    width: 750px;
+  }
+  .contact-text {
+    margin-left: 70px;
+  }
+  .contact-info {
+    flex-direction: column;
+  }
+  .footer-margin {
+    margin-bottom: 100px;
+  }
+  .logo-light {
+    margin-left: 110px;
+  }
+  .media-icons {
+    margin-left: 150px;
   }
 }/*# sourceMappingURL=style.css.map */
